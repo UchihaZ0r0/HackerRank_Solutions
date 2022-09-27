@@ -1,0 +1,11 @@
+if __name__ == '__main__':
+    n = int(input())
+    arr = map(int, input().split())
+    arr_list=list(arr)
+    arr_list.sort()
+    arr_sort_list=[]
+    #print(arr_list[2])
+    for x in arr_list:
+        if x not in arr_sort_list:
+            arr_sort_list.append(x)
+    print(arr_sort_list[-2])
